@@ -7,14 +7,11 @@
 */ 
 
 var five = require('johnny-five');
-
 var board = new five.Board();
-
 board.on('ready', function(){
   // Default to pin 13
   var led = new five.Led(13);
   led.blink(2000);
-  
 });
 
 board.on('error', function(err){
