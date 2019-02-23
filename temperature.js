@@ -1,8 +1,8 @@
 //Analog 04 = LM34 Temperature Sensor / I2C SDA
 const five = require("johnny-five");
-const arduino = new five.Board();
+const board = new five.Board();
 
-arduino.on("ready", function () {
+board.on("ready", function () {
 
     // Access the temperature sensor on pin A0
     const thermometer = new five.Thermometer({
